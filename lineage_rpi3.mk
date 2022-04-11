@@ -15,7 +15,10 @@
 #
 
 # Inherit common configuration
-$(call inherit-product, device/brcm/rpi-common/lineage_common.mk)
+#$(call inherit-product, device/brcm/rpi-common/lineage_common.mk)
+$(call inherit-product, device/google/atv/products/atv_base.mk)
+
+$(call inherit-product, vendor/lineage/config/common_full_tv.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/brcm/rpi3/device.mk)
